@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Dashboard - FreshCart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <h1>🛒 FreshCart</h1>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#products">Products</a>
+                <a href="#cart">Cart 🛒</a>
+                <button id="logoutBtn">Logout</button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Welcome -->
+    <section class="welcome">
+
+        <h2>Welcome to FreshCart!</h2>
+
+        <p>Shop your daily groceries online.</p>
+
+    </section>
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search groceries..."
+        >
+
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="products-section">
+
+        <h2>Available Products</h2>
+
+        <div id="productContainer" class="product-container">
+
+            <div class="product-card">
+
+                <img
+                    src="https://placehold.co/300x200?text=Apples"
+                    alt="Apples"
+                >
+
+                <h3>Fresh Apples</h3>
+
+                <p>₹120 / kg</p>
+
+                <button
+                    class="btn add-to-cart"
+                    data-name="Fresh Apples"
+                    data-price="120"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img
+                    src="https://placehold.co/300x200?text=Tomatoes"
+                    alt="Tomatoes"
+                >
+
+                <h3>Tomatoes</h3>
+
+                <p>₹40 / kg</p>
+
+                <button
+                    class="btn add-to-cart"
+                    data-name="Tomatoes"
+                    data-price="40"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img
+                    src="https://placehold.co/300x200?text=Milk"
+                    alt="Milk"
+                >
+
+                <h3>Fresh Milk</h3>
+
+                <p>₹60 / litre</p>
+
+                <button
+                    class="btn add-to-cart"
+                    data-name="Fresh Milk"
+                    data-price="60"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img
+                    src="https://placehold.co/300x200?text=Rice"
+                    alt="Rice"
+                >
+
+                <h3>Rice</h3>
+
+                <p>₹70 / kg</p>
+
+                <button
+                    class="btn add-to-cart"
+                    data-name="Rice"
+                    data-price="70"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+
+        <h2>Your Cart</h2>
+
+        <div id="cartContainer">
+
+            <p>Your cart is empty.</p>
+
+        </div>
+
+        <h3>
+            Total: ₹<span id="cartTotal">0</span>
+        </h3>
+
+        <button id="checkoutBtn" class="btn">
+            Checkout
+        </button>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 FreshCart</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

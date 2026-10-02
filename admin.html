@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - FreshCart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Admin Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <h1>🛒 FreshCart Admin</h1>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#products">Products</a>
+                <a href="#orders">Orders</a>
+
+                <button id="adminLogoutBtn">
+                    Logout
+                </button>
+
+            </div>
+ 
+        </nav>
+    </header>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="dashboard-section">
+
+        <h2>Admin Dashboard</h2>
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+                <h3>Total Products</h3>
+                <p id="totalProducts">0</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">0</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Total Users</h3>
+                <p id="totalUsers">0</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Add Product -->
+    <section id="products" class="admin-section">
+
+        <h2>Manage Products</h2>
+
+        <form id="productForm">
+
+            <label for="productName">Product Name</label>
+
+            <input
+                type="text"
+                id="productName"
+                placeholder="Enter product name"
+                required
+            >
+
+            <label for="productPrice">Price</label>
+
+            <input
+                type="number"
+                id="productPrice"
+                placeholder="Enter price"
+                min="0"
+                required
+            >
+
+            <label for="productStock">Stock</label>
+
+            <input
+                type="number"
+                id="productStock"
+                placeholder="Enter stock quantity"
+                min="0"
+                required
+            >
+
+            <label for="productCategory">Category</label>
+
+            <select id="productCategory" required>
+
+                <option value="">Select Category</option>
+                <option value="Fruits">Fruits</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Groceries">Groceries</option>
+
+            </select>
+
+            <button type="submit" class="btn">
+                Add Product
+            </button>
+
+        </form>
+
+        <!-- Product List -->
+        <div id="adminProductList">
+
+            <h3>Product List</h3>
+
+            <p>No products added yet.</p>
+
+        </div>
+
+    </section>
+
+    <!-- Orders -->
+    <section id="orders" class="admin-section">
+
+        <h2>Manage Orders</h2>
+
+        <div id="adminOrders">
+
+            <p>No orders available.</p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 FreshCart | Admin Panel</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
